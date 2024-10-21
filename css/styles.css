@@ -1,4 +1,4 @@
-
+/* General styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +6,17 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #0e1225; /* Dark background color */
+  color: white;
 }
 
+/* Header banner styles */
 .banner {
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-  color: white;
-  padding: 20px 0;
+  background-image: url('../assets/images/banner-background.png'); /* Replace with your background image */
+  background-size: cover;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -24,120 +25,118 @@ body {
   margin: 0 auto;
 }
 
-.logo img {
-  max-width: 100%;
-  height: auto;
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 2.5em;
-  margin: 10px 0;
+.banner p {
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
-p {
-  margin: 10px 0 20px;
-}
-
-button {
-  background: #fff;
-  color: #000000;
+.banner button {
+  background-color: #0080ff;
   border: none;
+  color: white;
   padding: 10px 20px;
-  font-size: 1em;
+  font-size: 18px;
+  border-radius: 25px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s;
 }
 
-button:hover {
-  background: #ddd;
+.banner button:hover {
+  background-color: #063c72;
 }
 
-main {
-  background: #ffffff;
-  padding: 20px;
-  max-width: 1500px;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
 
-h2 {
-  margin: 20px 0;
-  font-size: 2em;
+#course-content {
+  padding: 60px 20px;
   text-align: center;
 }
 
-#course-content {
-  text-align: center; 
-  margin: 20px 0;
-}
-
 #course-content h2 {
-  font-size: 2em; 
-  margin-bottom: 15px; 
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 #course-content p {
-  font-size: 1.2em; 
-  line-height: 1.5; 
-  max-width: 1000px; 
-  margin: 0 auto 20px; 
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto 40px;
 }
 
 .modules-list {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .module {
-  background-color: #f0f0f0; 
-  border: 1px solid #ccc; 
-  border-radius: 5px; 
-  padding: 10px 20px; 
-  margin: 10px 0; 
-  width: 80%; 
-  max-width: 500px; 
-  text-align: left; 
+  background-color: #4f515e;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 200px;
+}
+
+.module span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
 }
 
 
 #transform-world {
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  background-image: url('../assets/images/transform-world.png'); 
+  padding: 80px 0;
   text-align: center;
-  padding: 15px;
-  margin: 20px 0;
+  font-size: 24px;
   font-weight: bold;
-  color: white;
-  border-radius: 5px;
+  color: #ffffff;
 }
 
+
 #professional-challenges {
+  padding: 60px 20px;
   text-align: center;
-  margin: 20px 0;
+}
+
+#professional-challenges h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 #professional-challenges img {
+  margin: 40px 0;
   max-width: 100%;
   height: auto;
-  margin: 20px 0;
 }
 
+#professional-challenges p {
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
 footer {
+  background-color: #10142a;
+  padding: 40px 0;
   text-align: center;
-  padding: 20px 0;
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-  color: white;
 }
 
 .dio-logo {
-  max-width: 100px;
-  margin: 10px 0;
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 16px;
 }
 
 footer a {
-  color: #000000;
+  color: #0080ff;
   text-decoration: none;
 }
 
